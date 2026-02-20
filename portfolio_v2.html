@@ -165,15 +165,18 @@ section { padding:8rem 4rem; border-top:1px solid var(--rule); }
   padding:2.2rem 0;
   border-bottom:1px solid var(--rule);
   transition:padding .35s cubic-bezier(.16,1,.3,1);
-  cursor:default; position:relative; overflow:hidden;
+  cursor:pointer; position:relative; overflow:hidden;
+  text-decoration:none; color:inherit;
 }
 .proj::before {
   content:''; position:absolute; left:-100%; top:0; bottom:0; width:100%;
   background:rgba(14,14,14,.03);
   transition:left .4s cubic-bezier(.16,1,.3,1);
+  pointer-events:none;
 }
 .proj:hover::before { left:0; }
 .proj:hover { padding-left:1rem; }
+.proj > * { position:relative; z-index:1; }
 .proj-n { font-family:'Geist Mono',monospace; font-size:.6rem; color:var(--dim); }
 .proj-name { font-family:'Instrument Serif',serif; font-size:1.6rem; font-weight:400; transition:letter-spacing .3s; }
 .proj:hover .proj-name { letter-spacing:.02em; }
@@ -379,7 +382,7 @@ footer { padding:2rem 4rem; border-top:1px solid var(--rule); display:flex; just
   </div>
   <div class="proj-list">
 
-    <div href="https://github.com/raorajat10/FashionNet" class="proj r">
+    <a href="https://github.com/raorajat10/FashionNet" target="_blank" rel="noopener noreferrer" class="proj r">
       <span class="proj-n">01</span>
       <div>
         <div class="proj-name">FashionNet</div>
@@ -387,9 +390,9 @@ footer { padding:2rem 4rem; border-top:1px solid var(--rule); display:flex; just
         <div class="proj-tags"><span class="ptag">TensorFlow</span><span class="ptag">Keras</span><span class="ptag">Scikit-learn</span><span class="ptag">PCA</span><span class="ptag">Google Colab</span></div>
       </div>
       <div class="proj-arr">↗</div>
-    </div>
+    </a>
 
-    <div href="https://ai-support-system-delta.vercel.app/" class="proj r r2">
+    <a href="https://ai-support-system-delta.vercel.app/" target="_blank" rel="noopener noreferrer" class="proj r r2">
       <span class="proj-n">02</span>
       <div>
         <div class="proj-name">Multi-Model AI</div>
@@ -397,9 +400,9 @@ footer { padding:2rem 4rem; border-top:1px solid var(--rule); display:flex; just
         <div class="proj-tags"><span class="ptag">Vite</span><span class="ptag">Puter.js</span><span class="ptag">Tailwind CSS</span></div>
       </div>
       <div class="proj-arr">↗</div>
-    </div>
+    </a>
 
-    <div href="https://resume-init.vercel.app/" class="proj r r3">
+    <a href="https://resume-init.vercel.app/" target="_blank" rel="noopener noreferrer" class="proj r r3">
       <span class="proj-n">03</span>
       <div>
         <div class="proj-name">Resume Scanner</div>
@@ -407,9 +410,9 @@ footer { padding:2rem 4rem; border-top:1px solid var(--rule); display:flex; just
         <div class="proj-tags"><span class="ptag">React</span><span class="ptag">OpenAI</span><span class="ptag">Puter.js</span><span class="ptag">Shadcn UI</span></div>
       </div>
       <div class="proj-arr">↗</div>
-    </div>
+    </a>
 
-    <div href="https://mr-interviewer.vercel.app/" class="proj r">
+    <a href="https://mr-interviewer.vercel.app/" target="_blank" rel="noopener noreferrer" class="proj r">
       <span class="proj-n">04</span>
       <div>
         <div class="proj-name">AI Interviewer</div>
@@ -417,9 +420,9 @@ footer { padding:2rem 4rem; border-top:1px solid var(--rule); display:flex; just
         <div class="proj-tags"><span class="ptag">Node.js</span><span class="ptag">Gemini AI</span><span class="ptag">Firebase</span><span class="ptag">Vapi</span><span class="ptag">Tailwind</span></div>
       </div>
       <div class="proj-arr">↗</div>
-    </div>
+    </a>
 
-    <div href="https://github.com/raorajat10/jarves" class="proj r r2">
+    <a href="https://github.com/raorajat10/jarves" target="_blank" rel="noopener noreferrer" class="proj r r2">
       <span class="proj-n">05</span>
       <div>
         <div class="proj-name">Jarvis AI Assistant</div>
@@ -427,7 +430,7 @@ footer { padding:2rem 4rem; border-top:1px solid var(--rule); display:flex; just
         <div class="proj-tags"><span class="ptag">Python</span><span class="ptag">Speech Recognition</span><span class="ptag">pyttsx3</span><span class="ptag">Wolfram Alpha</span></div>
       </div>
       <div class="proj-arr">↗</div>
-    </div>
+    </a>
 
   </div>
 </section>
